@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск авиабилетов "Победа"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Поиск авиабилетов "Победа"</h1>
+        <form id="searchForm">
+            <div class="form-group">
+                <label for="origin">Город отправления:</label>
+                <select id="origin" required>
+                    <option value="">Выберите город</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="destination">Город назначения:</label>
+                <select id="destination" required>
+                    <option value="">Выберите город</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="startDate">Дата начала поиска:</label>
+                <input type="date" id="startDate" required>
+            </div>
+            <div class="form-group">
+                <label for="days">Количество дней для поиска:</label>
+                <input type="number" id="days" min="1" max="30" required>
+            </div>
+            <button type="submit">Найти билеты</button>
+        </form>
+        <div id="results" class="hidden">
+            <h2>Результаты поиска</h2>
+            <div id="cheapestTicket"></div>
+            <table id="ticketsTable">
+                <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Цена</th>
+                        <th>Вылет</th>
+                        <th>Прилет</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div id="loading" class="hidden">Идет поиск билетов...</div>
+        <div id="error" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
