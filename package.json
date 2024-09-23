@@ -11,6 +11,6 @@
       "docker-pull": "docker pull asvspb/pobeda-tickets:latest"
     },    "dependencies": {
       "express": "^4.17.1",
-      "puppeteer": "^10.0.0"
+      "puppeteer": "^23.0.0"
     }
   }
