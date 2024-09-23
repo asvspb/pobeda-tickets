@@ -1,4 +1,3 @@
-```batch
 @echo off
 setlocal enabledelayedexpansion
 
@@ -71,4 +70,3 @@ start cmd /k npm start
 echo Server is running. Open your browser and navigate to http://localhost:7777
 
 endlocal
-```
