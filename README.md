@@ -23,9 +23,9 @@
 ## Запуск с использованием Docker
 
 1. Получите образ из Docker Hub:
-   docker pull asvspb/pobeda-flyticket:v1.0
+   docker pull asvspb/pobeda-flyticket:v1.1
 2. Запустите контейнер:
-   docker run -p 7777:7777 asvspb/pobeda-flyticket:v1.0
+   docker run -p 7777:7777 asvspb/pobeda-flyticket:v1.1
 3. Откройте браузер и перейдите по адресу `http://localhost:7777`
 
 ## Использование
