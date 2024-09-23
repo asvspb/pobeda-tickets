@@ -7,7 +7,7 @@ if %errorlevel% neq 0 (
     echo Git is not installed. Installing Git...
 
     :: Download Git installer
-    powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/git-for-windows/git/releases/download/v2.33.0.windows.2/Git-2.33.0.2-64-bit.exe', 'git-installer.exe')"
+    powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/git-for-windows/git/releases/download/v2.46.1.windows.1/Git-2.46.1-64-bit.exe', 'git-installer.exe')"
 
     :: Install Git
     start /wait git-installer.exe /VERYSILENT /NORESTART
@@ -29,7 +29,7 @@ if %errorlevel% neq 0 (
     echo Node.js is not installed. Installing Node.js...
 
     :: Download Node.js installer
-    powershell -Command "(New-Object Net.WebClient).DownloadFile('https://nodejs.org/dist/v14.17.6/node-v14.17.6-x64.msi', 'node-installer.msi')"
+    powershell -Command "(New-Object Net.WebClient).DownloadFile('https://nodejs.org/dist/v22.9.0/node-v22.9.0-x64.msi', 'node-installer.msi')"
 
     :: Install Node.js
     start /wait msiexec /i node-installer.msi /qn
