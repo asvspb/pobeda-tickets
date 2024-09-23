@@ -4,7 +4,9 @@
     "description": "Local flight search application",
     "main": "server.js",
     "scripts": {
-      "start": "node server.js"
+      "start": "node server.js",
+      "docker-build": "docker build -t pobeda-tickets .",
+      "docker-run": "docker run -p 7777:7777 pobeda-tickets"
     },
     "dependencies": {
       "express": "^4.17.1",
