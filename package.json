@@ -4,13 +4,14 @@
     "description": "Local flight search application",
     "main": "server.js",
     "scripts": {
-      "start": "node server.js",
-      "docker-build": "docker build -t pobeda-tickets .",
-      "docker-run": "docker run -p 7777:7777 pobeda-tickets",
-      "docker-push": "docker push asvspb/pobeda-tickets:latest",
-      "docker-pull": "docker pull asvspb/pobeda-tickets:latest"
-    },    "dependencies": {
-      "express": "^4.17.1",
-      "puppeteer": "^23.0.0"
+        "start": "node server.js",
+        "docker-build": "docker build -t pobeda-tickets .",
+        "docker-run": "docker run -p 7777:7777 pobeda-tickets",
+        "docker-push": "docker push asvspb/pobeda-tickets:latest",
+        "docker-pull": "docker pull asvspb/pobeda-tickets:latest"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "puppeteer": "^23.4.0"
     }
-  }
+}
