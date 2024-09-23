@@ -22,10 +22,10 @@
 
 ## Запуск с использованием Docker
 
-1. Соберите Docker образ:
-   docker build -t pobeda-tickets .
+1. Получите образ из Docker Hub:
+   docker pull asvspb/pobeda-tickets:latest
 2. Запустите контейнер:
-   docker run -p 7777:7777 pobeda-tickets
+   docker run -p 7777:7777 asvspb/pobeda-tickets:latest
 3. Откройте браузер и перейдите по адресу `http://localhost:7777`
 
 ## Использование
